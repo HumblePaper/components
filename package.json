@@ -1,0 +1,25 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "description": "Generic Riot components with docs",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HumblePaper/components.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HumblePaper/components/issues"
+  },
+  "homepage": "https://github.com/HumblePaper/components#readme",
+  "devDependencies": {
+    "documentjs": "^0.4.4",
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "jsdoc-riot": "^0.1.3"
+  }
+}
