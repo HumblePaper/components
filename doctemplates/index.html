@@ -13,8 +13,9 @@
   </style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
-	<script src="/semantic/dist/semantic.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+	<script src="semantic/dist/semantic.min.js"></script>
 </head>
 <body>
 <div class="ui vertical menu">
@@ -23,7 +24,8 @@
     <div class="menu">
    
       {% for page in pages %}
-      <a  href='/docs/{{page.name}}.html' class="first">
+
+      <a  href='docs/{{page.name}}.html' class="first">
         {{ page.name }}
       </a >
     {% endfor %}
