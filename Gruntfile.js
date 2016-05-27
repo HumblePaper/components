@@ -1,17 +1,23 @@
 module.exports = function(grunt) {
 
-  grunt.loadNpmTasks('documentjs');
+
   grunt.initConfig({
-    documentjs: {
-      "sites": {
-        "styles": {
-            "glob": "tags/**/*.{tag,md}",
-            "dest": "styleguide"
-        }
-    }
+    riotdocs:{
+      'run':{
+        "source":"tags",
+        "destination":"docs",
+        files: {
+                src: 'tags/*'
+            }
+      }
     }
   });
   // Default task(s).
-  grunt.registerTask('default', ['documentjs']);
+  // 
+  
+  
+  grunt.loadTasks('tasks');
+  grunt.registerTask('default', [ "riotdocs:run"]);
+
 
 };

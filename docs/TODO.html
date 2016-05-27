@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Riot Documentation</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
+  <script src="/semantic/dist/semantic.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/riot/2.4.1/riot+compiler.min.js"></script>
+  <script src="/tags/todo.tag" type="riot/tag"></script>
+
+</head>
+<body>
+<h2 class="ui dividing header">TODO</h2>
+<div class="ui message">
+    test component details
+  </div>
+    
+    <h4 class="ui header">
+      simple
+    </h4>
+      <div class="example">
+        <todo></todo>
+<script>
+riot.mount('todo', {
+title: 'I want to behave!',
+items: [
+{ title: 'Avoid excessive caffeine', done: true },
+{ title: 'Hidden item',  hidden: true },
+{ title: 'Be less provocative'  },
+{ title: 'Be nice to people' }
+]
+})
+</script>
+      </div>
+      <pre>
+        &lt;todo&gt;&lt;/todo&gt;
+&lt;script&gt;
+riot.mount(&#39;todo&#39;, {
+title: &#39;I want to behave!&#39;,
+items: [
+{ title: &#39;Avoid excessive caffeine&#39;, done: true },
+{ title: &#39;Hidden item&#39;,  hidden: true },
+{ title: &#39;Be less provocative&#39;  },
+{ title: &#39;Be nice to people&#39; }
+]
+})
+&lt;/script&gt;
+      </pre>
+
+    
+	
+</body>
+</html>

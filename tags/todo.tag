@@ -1,8 +1,20 @@
 /**
- * @page togo.tag TODO
+ * @page TODO togo.tag 
  * @description
  * a test component details
- * @demo demo/todo.html
+ * @example simple
+ * <todo></todo>
+ * <script>
+ * riot.mount('todo', {
+ *    title: 'I want to behave!',
+ *      items: [
+ *        { title: 'Avoid excessive caffeine', done: true },
+ *        { title: 'Hidden item',  hidden: true },
+ *        { title: 'Be less provocative'  },
+ *        { title: 'Be nice to people' }
+ *     ]
+ *  })
+ * </script>
  */
 
 <todo>
