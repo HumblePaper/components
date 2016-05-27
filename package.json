@@ -17,10 +17,11 @@
   },
   "homepage": "https://github.com/HumblePaper/components#readme",
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-jshint": "^1.0.0",
     "comment-parser": "*",
-    "documentjs": "^0.4.4"
+    "documentjs": "^0.4.4",
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0"
   },
   "dependencies": {
     "better-console": "^0.2.4",

@@ -10,14 +10,23 @@ module.exports = function(grunt) {
                 src: 'tags/*'
             }
       }
-    }
+    },
+    copy: {
+    main: {
+      expand: true,
+      cwd:"docs",
+      src: 'index.html',
+      dest: '.'
+    },
+  },
+
   });
   // Default task(s).
   // 
   
-  
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadTasks('tasks');
-  grunt.registerTask('default', [ "riotdocs:run"]);
+  grunt.registerTask('default', [ "riotdocs:run", "copy:main"]);
 
 
 };
